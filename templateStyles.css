@@ -1,11 +1,13 @@
 h1 {
     font-family: 'Courier New', Courier, monospace;
-    color: cornflowerblue;
+    color:cornflowerblue;
     display: inline;
 }
-
+ 
 body {
-    background: rgb(223, 215, 215);
+    
+    height: 100%;
+    background: linear-gradient(white 15%, lightgrey 60%); 
 }
 
 p {
@@ -15,7 +17,7 @@ p {
 
 nav {
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
 
     
 }
@@ -52,23 +54,13 @@ li:last-child {
 
 
 
-.gallery {
+div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    max-width: 50%;
-    height:auto;
+    width: 180px;
 }
 
-div.gallery:hover {
-    border: 1px solid rgb(73, 73, 73);
-
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
 
 div.desc {
     padding: 15px;
@@ -84,23 +76,39 @@ nav ul li a {
 
 .addMembersBtn {
     background-color: cornflowerblue;
-    position: absolute;
-    color: ivory;
-    /* margin-top: 280px;
-    margin-left: -750px; */
-    bottom: 38%;
-    left: 2%;
+    position: relative;
+    color:ivory;
+     /*margin-top: 280px;
+    margin-left: -750px;*/
+    right: 728px;
+    margin-top: 21%;
     padding: 10px 10px 10px 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     border-radius: 20px;
     transition-duration: 0.4s;
+    clear: both;
 }
+
+.removeBtn {
+    background-color: cornflowerblue;
+    color: white;
+    position: relative;
+    right: 663px;
+    margin-top: 21%;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+
+}
+
+
 
 .editButton{
     background-color: cornflowerblue;
     color: ivory;
-    
     padding: 10px 10px 10px 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
@@ -110,7 +118,6 @@ nav ul li a {
 
 .addMembersBtn:hover {
     /* applies the shadow effect */
-    
     box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(44, 133, 250, 0.19);
 }
 
@@ -118,26 +125,15 @@ nav ul li a {
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
 
 }
-.removeBtn {
-    background-color: cornflowerblue;
-    color: white;
-    position: absolute;
-    bottom: 38%;
-    left: 10%;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
-    border-radius: 20px;
-    transition-duration: 0.4s;
-}
+
 
 .removeInd{
     margin-right: 70px;
     margin-left: 60px;
     background-color: cornflowerblue;
     color: ivory;
+   
     /* display: none; */
-
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     border-radius: 20px;
@@ -168,6 +164,18 @@ nav ul li a {
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
+div.gallery:hover {
+    border: 1px solid rgb(73, 73, 73);
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: 178px;
+    clear: both;
+
+
+}
 
 footer {
     font-size: 12px;
