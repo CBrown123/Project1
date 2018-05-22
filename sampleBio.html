@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Bond Ragsdale</title>
+    <link href="templateStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>
+        <strong>Intern Database and Management System</strong>
+    </h1>
+
+    <nav>
+        <ul>
+
+            <li>
+                <a href="template.html"> Home </a>
+            </li>
+            <li>
+                <a href="Roster.html"> Intern Roster </a>
+            </li>
+            <li>
+                <a href="taskBoard.html"> Task Board </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="bio" class="bioText">
+        <br>
+        <img src="genericHeadshot.jpg">
+        <p id="name">Name: Bond Ragsdale</p>
+        <p id="fieldOfStudy">Field of Study: Computer Science</p>
+    </div>
+
+    <button type="button" class="editButton" onclick="editFunction()">Edit Member</button>
+    <button type="button" id="saveChangesButton" class="saveChangesButton" onclick="saveChangesFunction()">Save Changes</button>
+<!-- below are scripts to indicate that the content is editable -->
+
+
+<!-- TODO - save the edits to the database -->
+    <script>
+        function editFunction() {
+            document.getElementById("bio").contentEditable='true';
+            document.getElementById("bio").style.border =  '2px solid black';
+            document.getElementById("saveChangesButton").style.display = 'inline-block';
+        }
+
+        function saveChangesFunction(){
+            
+            document.getElementById("bio").contentEditable='false';
+            document.getElementById("bio").style.border =  '0px none';
+            document.getElementById("saveChangesButton").style.display = 'none';
+        }
+
+    </script>
+
+    <footer>Next Gen Federal Systems, 2018</footer>
+</body>
+
+</html>

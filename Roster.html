@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+  <title>Intern Roster</title>
+  <link href="templateStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 style="font-size: 4vw">
+    <strong>Intern Database and Management System</strong>
+  </h1>
+
+  <nav style="font-size: 1vw">
+    <ul>
+      <li>
+        <a href="template.html"> Home </a>
+      </li>
+      <li class="active">
+        <a href="Roster.html"> Intern Roster </a>
+      </li>
+      <li>
+        <a href="taskBoard.html"> Task Board </a>
+      </li>
+    </ul>
+  </nav>
+
+  <p>Current Interns</p>
+<!-- TODO fix remove Button spacing -->
+
+  <div id="removeIndBtns" style="font-size: 1vw">
+    <button id="intern1" class="removeInd" type="button" onclick="remove1()">Remove</button>
+    <button id="intern2" class="removeInd" type="button" onclick="remove2()">Remove</button>
+    <button id="intern3" class="removeInd" type="button" onclick="remove3()">Remove</button>
+    <button id="intern4" class="removeInd" type="button" onclick="remove4()">Remove</button>
+  </div>
+
+  <script>
+//  consolidate all remove functions into one function that works to remove a selected intern element
+    function removeIndividual(){
+      document.getElementById;
+    }
+
+    function remove1() {
+      document.getElementById('intern1pic').remove();
+      document.getElementById('intern1').remove();
+    }
+
+    function remove2() {
+      document.getElementById('intern2pic').remove();
+      document.getElementById('intern2').remove();
+    }
+
+    function remove3() {
+      document.getElementById('intern3pic').remove();
+      document.getElementById('intern3').remove();
+    }
+
+    function remove4() {
+      document.getElementById('intern4pic').remove();
+      document.getElementById('intern4').remove();
+    }
+
+
+  </script>
+
+  <div class="gallery" id="intern1pic">
+    <a href="sampleBio.html">
+      <img src="genericHeadshot.jpg" width="300" height="200">
+    </a>
+    <div class="desc">Bond Ragsdale - Development Intern</div>
+  </div>
+
+  <div class="gallery" id="intern2pic">
+    <a href="sampleBio.html">
+      <img src="genericHeadshot.jpg" width="300" height="200">
+    </a>
+    <div class="desc">First Last - 2</div>
+  </div>
+
+  <div class="gallery" id="intern3pic">
+    <a href="sampleBio.html">
+      <img src="genericHeadshot.jpg" width="300" height="200">
+    </a>
+    <div class="desc">First Last - 3</div>
+  </div>
+
+  <div class="gallery" id="intern4pic">
+    <a href="sampleBio.html">
+      <img src="genericHeadshot.jpg" width="300" height="200">
+    </a>
+    <div class="desc">First Last - 4</div>
+  </div>
+
+  <form method="get" action="addMembers.html">
+    <button type="button" class="addMembersBtn" onclick="window.location.href= 'addMembers.html';">
+      Add Members</button>
+
+    <button type="button" class="removeBtn" onclick="showRemoveInds()">Remove Members</button>
+  </form>
+
+  <script>
+
+    function showRemoveInds() {
+      document.getElementById("removeInd").style.display = 'inline';
+
+    }
+
+  </script>
+
+
+  <footer>Next Gen Federal Systems, 2018</footer>
+</body>
+
+
+</html>

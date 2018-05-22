@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- 
+this file serves as the add member page, where the user inputs values for the various descriptive queries, where they
+are sent to the back end for storage until editing
+
+the added member should be added to the list that appears in the roster, with their info added to the bio -->
+
+
+<html lang="en-US">
+
+<head>
+    <title>Mock Up</title>
+    <link href="templateStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>
+        <strong>Intern Database and Management System</strong>
+    </h1>
+
+    <nav>
+        <ul>
+
+            <li>
+                <a href="template.html"> Home </a>
+            </li>
+            <li>
+                <a href="Roster.html"> Intern Roster </a>
+            </li>
+            <li>
+                <a href="taskBoard.html"> Task Board </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <br>
+
+    <form action="action_page.php" method="post">
+        <fieldset class="formDescriptions">
+            <legend>Intern Information</legend>
+            <br> Picture:
+            <input type="file" name="picture">
+            <br>
+            <br> First Name:
+            <br>
+            <input type="text" name="firstName">
+            <br> Last Name:
+            <br>
+            <input type="text" name="lastName">
+            <br> Email Address:
+            <br>
+            <input type="email" name="picture">
+            <br> Area of Study
+            <br>
+            <input type="text" name="areaOfStudy">
+            <br> Mentor(s)
+            <br>
+            <input type="text" name="mentors">
+            <br> Anticipated Graduation Date
+            <br>
+            <input type="text" name="gradDate">
+
+            <br> Bio:
+            <br>
+
+            <textarea name="bio" cols="40" rows="8"></textarea>
+
+
+        </fieldset>
+        <br>
+        <input type="submit" name="submit">
+        <br>
+    </form>
+
+
+    <footer>Next Gen Federal Systems, 2018</footer>
+</body>
+
+</html>

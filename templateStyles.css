@@ -1,0 +1,176 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+    display: inline;
+}
+
+body {
+    background: rgb(223, 215, 215);
+}
+
+p {
+    font-size: 25px;
+    padding: 5px 0 0 40px;
+}
+
+nav {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+
+    
+}
+
+nav ul {
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: cornflowerblue;
+    float: left;
+    border-right: 2px solid #999;
+}
+
+li:last-child {
+    border-right: none;
+    /*removes the pipe from the last element to maintain
+    a clean appearance
+    */
+}
+
+.active {
+    /* designates a unique background color for the active tab to indicate to the user that the change occured */
+    background-color: rgb(131, 189, 243);
+}
+
+
+
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 50%;
+    height:auto;
+}
+
+div.gallery:hover {
+    border: 1px solid rgb(73, 73, 73);
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+nav ul li a {
+    /*color of the links themselves
+    */
+    color: white;
+}
+
+.addMembersBtn {
+    background-color: cornflowerblue;
+    position: absolute;
+    color: ivory;
+    /* margin-top: 280px;
+    margin-left: -750px; */
+    bottom: 38%;
+    left: 2%;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.editButton{
+    background-color: cornflowerblue;
+    color: ivory;
+    
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.addMembersBtn:hover {
+    /* applies the shadow effect */
+    
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(44, 133, 250, 0.19);
+}
+
+.editButton:hover{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+
+}
+.removeBtn {
+    background-color: cornflowerblue;
+    color: white;
+    position: absolute;
+    bottom: 38%;
+    left: 10%;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.removeInd{
+    margin-right: 70px;
+    margin-left: 60px;
+    background-color: cornflowerblue;
+    color: ivory;
+    /* display: none; */
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.formDescriptions {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.saveChangesButton{
+    background-color: cornflowerblue;
+    color: ivory;
+    display: none;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.removeBtn:hover {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.saveChangesButton:hover{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+footer {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
