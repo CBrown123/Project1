@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+  <title>Intern Roster</title>
+  <link href="templateStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <a href="template.html">
+  <img src="Logo.jpg" width="500" height="80">
+  </a>
+  <br>
+  <br>
+  <h1>
+    <strong>Intern Database and Management System</strong>
+  </h1>
+  <br>
+  <br>
+  <nav>
+    <ul>
+      <li>
+        <a href="file:///C:\Users\yert2\Desktop\NGIP\template.html"> Home </a>
+      </li>
+      <li class="active">
+        <a href="file:///C:\Users\yert2\Desktop\NGIP\Roster.html"> Intern Roster </a>
+      </li>
+      <li>
+        <a href="file:///C:\Users\yert2\Desktop\NGIP\taskBoard.html"> Task Board </a>
+      <li>
+        <a href = "file:///C:\Users\yert2\Desktop\NGIP\Feedback.html"> Feedback </a>
+      </li>
+      </li>
+    </ul>
+  </nav>
+ <p>Current Interns</p>
+<!-- TODO fix remove Button spacing -->
+
+  <div id="removeIndBtns">
+    <button id="intern1" class="removeInd" type="button" onclick="remove1()">Remove</button>
+    <button id="intern2" class="removeInd" type="button" onclick="remove2()">Remove</button>
+    <button id="intern3" class="removeInd" type="button" onclick="remove3()">Remove</button>
+    <button id="intern4" class="removeInd" type="button" onclick="remove4()">Remove</button>
+  </div>
+
+  <script>
+//  consolidate all remove functions into one function that works to remove a selected intern element
+    function removeIndividual(){
+      document.getElementById;
+    }
+
+    function remove1() {
+      document.getElementById('intern1pic').remove();
+      document.getElementById('intern1').remove();
+    }
+
+    function remove2() {
+      document.getElementById('intern2pic').remove();
+      document.getElementById('intern2').remove();
+    }
+
+    function remove3() {
+      document.getElementById('intern3pic').remove();
+      document.getElementById('intern3').remove();
+    }
+
+    function remove4() {
+      document.getElementById('intern4pic').remove();
+      document.getElementById('intern4').remove();
+    }
+
+
+  </script>
+
+  <div class="gallery" id="intern1pic">
+    <a href="file:///C:\Users\yert2\Desktop\NGIP\sampleBio.html">
+      <img src="genericHeadshot.jpg" width="300" height="200">
+    </a>
+    <div class="desc">Bond Ragsdale - Development Intern</div>
+  </div>
+
+  <div class="gallery" id="intern2pic">
+    <a href="file:///C:\Users\yert2\Desktop\NGIP\sampleBio.html">
+      <img src="C:\Users\yert2\OneDrive\Pictures\NextGen Pics\Me.jpg" width="600" height="400">
+    </a>
+    <div class="desc">William Friedline - Development Intern</div>
+  </div>
+
+  <div class="gallery" id="intern3pic">
+    <a href="file:///C:\Users\yert2\Desktop\NGIP\sampleBio.html">
+      <img src="genericHeadshot.jpg" width="600" height="400">
+    </a>
+    <div class="desc">First Last - 3</div>
+  </div>
+
+  <div class="gallery" id="intern4pic">
+    <a href="file:///C:\Users\yert2\Desktop\NGIP\sampleBio.html">
+      <img src="genericHeadshot.jpg" width="600" height="400">
+    </a>
+    <div class="desc">First Last - 4</div>
+  </div>
+
+  <br<form>
+    <button type="button" class="addMembersBtn" onclick="window.location.href= 'file:///C:/Users/yert2/Desktop/NGIP/addMembers.html'">
+      Add Members</button>
+
+    <button type="button" class="removeBtn" onclick="showRemoveInds()">Remove Members</button>
+  </form>
+
+  <script>
+
+    function showRemoveInds() {
+      document.getElementById("removeInd").style.display = 'inline';
+
+    }
+
+  </script>
+
+
+
+</body>
+
+
+</html>
